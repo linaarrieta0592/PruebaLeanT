@@ -24,11 +24,6 @@ public class HighestPrice implements Task {
         actor.attemptsTo(Click.on(SwaglabsUI.PRICE_HIGH));
         actor.attemptsTo(Click.on(SwaglabsUI.ADD_TO_CART));
         actor.attemptsTo(Click.on(SwaglabsUI.SHOW_CART));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         actor.attemptsTo(Click.on(SwaglabsUI.BUTTON_CHECKOUT));
         actor.attemptsTo(Enter.theValue(listUser.get(0).getName()).into(SwaglabsUI.FIRST_NAME));
         actor.attemptsTo(Enter.theValue(listUser.get(0).getLastname()).into(SwaglabsUI.LAST_NAME));

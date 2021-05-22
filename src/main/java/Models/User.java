@@ -7,23 +7,19 @@ public class User {
     private String name;
     private String lastname;
     private String postalcode;
-    private String usernameLock;
 
-    public User(String username, String password, String name, String lastname, String postalcode, String usernameLock) {
+
+    public User(String username, String password, String name, String lastname, String postalcode) {
         this.username = username;
         this.password = password;
         this.name = name;
         this.postalcode = postalcode;
         this.lastname = lastname;
-        this.usernameLock = usernameLock;
+
     }
 
     public String getUsername() {
         return username;
-    }
-
-    public String getUsernameLock() {
-        return usernameLock;
     }
 
     public String getPassword() {
